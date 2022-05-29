@@ -7,46 +7,16 @@
   	<meta charset="UTF-8">
 </head>
 
-<body id="body">
-  <div id="main">
-    <div id="header">Phish block settings</div>
-    <div id="content">
-      <div id="openModal" class="modal">
-        <div class="modal-dialog">
-
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title">Список безопасных сайтов</h3>
-              <a href="#close" title="Close" class="close">×</a>
-            </div>
-            <div class="modal-body">    
-            <ul id="white_lst">
-            </ul>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div id="openModal2" class="modal">
-        <div class="modal-dialog">
-
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title">Список фишинговых сайтов</h3>
-              <a href="#close" title="Close" class="close">×</a>
-            </div>
-            <div class="modal-body">    
-            <ul id="black_lst">
-            </ul>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <a id="open-btn2" href="#openModal2">Открыть черный список</a>
-      <a id="open-btn1" href="#openModal">Открыть белый список</a>
-      <a id="delete" href="##">Очистить все списки</a>
-    </div>
+<body>
+  <div class="title_top">
+  <h1 id="name">PhishBlock - проактивная защита от фишинга   | Журнал</h1>
+  <img id="icon" src="icon.png">
+  
   </div>
+  <button id="delete_all">Очистить все списки</button>
+  <h1 id="black">Черный список</h1>
+  <h1 id="white">Белый список</h1>
+  <ul class="white_list" id="white_lst"></ul>
+  <ul class="black_list" id="black_lst"></ul>
 </body>  
 </html>
