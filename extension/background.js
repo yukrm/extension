@@ -4,7 +4,7 @@
 //настроить проверку html кода
 var black_list = [];
 var white_list = [];
-var extens_url = 'ohfllfkkggoibcpojmefndphjmhcjhlk';
+var extens_url = ['ohfllfkkggoibcpojmefndphjmhcjhlk','extensions'] ;
 //обновление списков после релога
 var update_list = function () {
   chrome.storage.local.get(['url_black','url_white'], function (result){
@@ -99,7 +99,7 @@ var bb = function () {
     var tab = tabs[0];
     var url = new URL(tab.url);
     var domain = url.hostname;
-    if (black_list.includes(domain)==false && white_list.includes(domain)==false && domain!=extens_url){
+    if (black_list.includes(domain)==false && white_list.includes(domain)==false && extens_url.includes(domain)==false){
       black_list.push(domain)
       chrome.storage.local.set({'url_black': black_list}, function() {
       });
@@ -190,7 +190,7 @@ chrome.tabs.onCreated.addListener(function(tab){
           chrome.storage.local.set({'last_url': url.href}, function() {});
           chrome.tabs.update(tabId, {url: chrome.extension.getURL("blocked.html")});
         }
-        else if (white_list.includes(domain)==false && domain!=extens_url){
+        else if (white_list.includes(domain)==false && extens_url.includes(domain)==false){
           //setTimeout(() => {  scan_phish(domain2, mark_list, tabId, url.href); }, 2000);
           setTimeout(() => {scan_phish(domain, mark_list, tabId, url.href); }, 2000);
         }

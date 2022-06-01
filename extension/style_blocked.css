@@ -3,32 +3,31 @@ html, body {
     background: rgba(144, 13, 13, 0.755);
     padding: 0;
     margin: 0;
-    overflow: hidden;
   }
 
 #cary{
-    color: rgba(255, 255, 255, 0.751);
+    color: rgba(255, 255, 255, 0.842);
     position:relative;
     top: 0%;
-    right: 0%;
+    left: 30%;
     text-align: left;
     font-size: 26pt;
     width: 60%;
 }
 #text{
-    color: rgba(255, 255, 255, 0.751);
+    color: rgba(255, 255, 255, 0.842);
     position:relative;
     top: 0%;
-    right: 0%;
-    text-align: left;
+    left: 26%;
+    text-align: center;
     font-size: 14pt;
     width: 45%;
 }
 
 #stop{
     position:relative;
-    top: 0%;
-    right: 0%;
+    top: 3%;
+    left: 43%;
     opacity: 0.75;
     width: 10%;
 }
@@ -40,8 +39,10 @@ html, body {
     color: white; /* White text */
     cursor: pointer;
     position:relative;
-    top:0%; left:0%; right:0;
+    top:5%; left:33%; right:0;
     border-radius: 6px;
+    width: 200px;
+    height: 30px;
 }
 #back:hover {
     background-color: #c23737d0;
@@ -52,8 +53,10 @@ html, body {
     color: white; /* White text */
     cursor: pointer;
     position:relative;
-    top:0%; left:0%; right:0;
+    top:5%; left:35%; right:0;
     border-radius: 6px;
+    width: 200px;
+    height: 30px;
 }
 #close:hover {
     background-color: #2aad2a8e;

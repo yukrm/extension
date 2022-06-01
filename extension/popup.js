@@ -2,7 +2,7 @@
 //var url = window.location.href;
 window.onload = function() {
     document.getElementById("settings").onclick = function(el) {
-        window.open(chrome.extension.getURL("options.html"), "hello", "width=10,height=600" );
+        window.open(chrome.extension.getURL("options.html"));
     }
     document.getElementById("btn_black").onclick = function(el) {
         chrome.runtime.sendMessage({greeting: "url-in-black-list"});
