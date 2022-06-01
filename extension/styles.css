@@ -1,0 +1,118 @@
+
+body {
+    width: 255px;
+    height: 320px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.925);
+}
+
+
+.title_top{
+    position: fixed;
+    top: 0;
+    height:15%;
+    width: 100%;
+    background-color: rgb(123, 128, 128);
+}
+#test{
+    position:absolute;
+    top:20%; left:0%; right:28%;  
+}
+#name {
+    color: rgb(0, 0, 0);
+    font-size: 16pt;
+    text-align: center;
+    position:absolute;
+    top:20%; left:0%; right:28%;  
+    margin: 0;
+}
+
+#icon{
+    width: 25px;
+    height: 25px;
+    position:absolute;
+    top:25%; left:3%; right:0;
+}
+
+#settings{
+    width: 20px;
+    height: 20px;
+    position:absolute;
+    top:27%; left:90%; right:0;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition:         transform .8s ease-in-out;
+}
+#settings:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+#url{
+    position: fixed;
+    top: 15%;
+    right: 0%;
+    height:10%;
+    width: 100%;
+}
+#blocked{
+    position: fixed;
+    top: 45%;
+    right: 0%;
+    height:10%;
+    width: 100%;
+}
+.sum_block{
+    color: rgba(255, 255, 255, 0.877);
+    text-align: center;
+    font-size: 12pt;
+    position:fixed;
+    top: 40%; left:0%; right:0%;  
+}
+#sum{
+    position: fixed;
+    top: 45%;
+    right: 0%;
+    height:10%;
+    width: 100%;
+}
+.sum_url{
+    color: rgba(255, 255, 255, 0.877);
+    text-align: center;
+    font-size: 14pt;
+    position:fixed;
+    top: 30%; left:0%; right:0%;  
+}
+.cur_url{
+    color: rgba(255, 255, 255, 0.877);
+    text-align: center;
+    font-size: 14pt;
+    position:fixed;
+    top: 15%; left:0%; right:0%;  
+}
+.btn_group button {
+    font-size: medium;
+    background-color: #535353e0; /* Green background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer/hand icon */    
+}
+
+#btn_black{
+    position:absolute;
+    top:85%; left:3%; right:0;
+    border-radius: 6px;
+    height:40px;
+    width:94%;
+}
+#btn_black:hover {
+    background-color: #c23737d0;
+}
+#btn_white{
+    position:absolute;
+    top:71%; left:3%; right:0;
+    border-radius: 6px;
+    height:40px;
+    width:94%;
+}
+#btn_white:hover {
+    background-color: #2aad2a8e;
+}

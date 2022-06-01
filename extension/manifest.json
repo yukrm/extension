@@ -1,0 +1,25 @@
+{
+    "name": "extension",
+    "description": "Анти-фишинг расширение",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "web_accessible_resources": ["blocked.html"],
+    "options_page": "options.html",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "Анти-фишинг расширение",
+        "default_popup": "popup.html"   
+    },
+    "content_scripts": [
+        {
+            "matches":["<all_urls>"],
+            "js": ["content.js","jquery.min.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+      },
+    "permissions": ["<all_urls>", "activeTab", "tabs", "storage", "webRequest", "webRequestBlocking"]   
+}
