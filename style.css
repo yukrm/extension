@@ -1,0 +1,132 @@
+body{
+    background-color: rgba(0, 0, 0, 0.925);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    }
+
+#info_url{
+    position: absolute;
+    top: 98px;
+    left: 465px;
+    width: 40%;
+    height: 469px;
+    background-color:rgba(0, 139, 139, 0.473);
+}
+
+#info{
+    color: #ffffffbe;
+    position:absolute;
+    top: 50px;
+    left: 470px;
+    margin-top: 15px;
+    width: 100px;
+}
+#delete_all{   
+    position:relative;
+    left: 15px;
+    border-radius: 6px;
+    height:40px;
+    width:300px;
+    margin-bottom: 15px;
+    font-size: medium;
+    background-color: #6b6b6b93; /* Green background */
+    color: white; /* White text */
+    cursor: pointer;
+}
+#delete_all:hover {
+    background-color: #c23737d0;
+}
+#white_lst{
+    font-size: 12pt;
+    position:relative; 
+    left: 15px;
+    color: #ffffffc5;
+    border-collapse: collapse; 
+}
+#white{
+    color: #ffffffbe;
+    position:relative;
+    left: 20px;
+    margin-top: 15px;
+    width: 50%;
+}
+#black{
+    color: #ffffffbe;
+    position:relative;
+    left: 20px;
+    margin: 0;
+    width: 50%;
+}
+
+.del{
+    position: absolute;
+    right: 5px;
+    width: 35px;
+    margin-top: -1%;
+    filter: alpha (Opacity=25);
+    opacity: 0.25;  
+}
+.del:hover {
+    filter: alpha (Opacity=100);
+    cursor: pointer;
+    opacity: 1;
+}
+
+#black_lst{
+    font-size: 12pt;
+    position:relative; 
+    left: 15px;
+    color: #ffffffc5;
+    border-collapse: collapse; 
+}
+ul::-webkit-scrollbar {
+    width: 0px;
+}
+ul{
+    border: 2px solid rgb(202, 202, 202);
+    border-radius: 2%;
+    line-height: 0.3; 
+    height:200px; width:350px;
+    overflow-y:scroll;
+    /*list-style-type: none;*/
+}
+
+#name{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(123, 128, 128);
+    color: rgb(0, 0, 0);
+    font-size: 18pt;
+    margin: 0;
+}
+#icon{
+    width: 28px;
+    height: 30px;
+    position:relative;
+    top: 8px;
+    left: 2px;
+    margin-left: 10px;
+}
+.info{
+    color: #ffffffbe;
+    font-size: 12pt;
+}
+#url_inf{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: auto;
+    font-size: 14pt;
+    height: 20px;
+    text-decoration: underline cornflowerblue;
+}
+#url{
+    cursor: pointer;
+    width: 65%;
+     
+}
+
+.info li{
+    margin-bottom: 25px;
+}
+
